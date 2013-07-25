@@ -14,7 +14,7 @@
  * @package WordPress
  */
 
-/* SETTINGS: Could be used by root relative functions later on if you are on a staging or local server */
+/* SETTINGS: Could be used by root relative functions later on if you are on a staging or local server, replace the items in all caps. */
 
 // PRODUCTION SETTINGS
 $database = 'DATABASE';					/** MySQL database */
@@ -25,7 +25,7 @@ $domain_tld = 'com';
 
 // STAGING AND LOCAL DATABASE SETTINGS
 $staging_domain = 'STAGING.COM'; /* domain of staging server, with TLD (.com) */
-$staging_database = 'staging_' . 'artsfor';		/** Database name and username  */
+$staging_database = 'staging_' . 'USER';		/** Database name and username  */
 
 // define('RELOCATE',true); // may be needed, hopefully not
 
@@ -40,7 +40,7 @@ $servers = array(
 
 	// EXAMPLE: project.testingserver.com
 	// Staging server
-	'staging' => $domain.'.'.$staging_domain
+	'staging' => $domain.'.'.$staging_domain,
 
 	// EXAMPLE: domain.dev
 	// Local development server
@@ -48,7 +48,7 @@ $servers = array(
 
 	// EXAMPLE: domain.dev.10.0.10.91.xip.io
 	// Dyanmic DNS, great for tablet and phone testing the local machine
-	'xip.io' => $servers['local'] . '.' . $_SERVER['SERVER_ADDR'] . '.xip.io';
+	'xip.io' => $servers['local'] . '.' . $_SERVER['SERVER_ADDR'] . '.xip.io'
 );
 
 // test if it's one of the non-production servers, except the production server
@@ -58,7 +58,7 @@ if($servers['current'] == $servers['staging'] ||
 
 	// ** MySQL settings ** //
 	// set database setting if not production server
-	$database = $staging_database
+	$database = $staging_database;
 	$database_user = $staging_database;
 
 	// set URL to staging address
