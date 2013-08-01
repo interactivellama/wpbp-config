@@ -7,7 +7,7 @@ The best way to develop especially within a team is to have a three-tier server 
 
 This config file accomplishes this by setting a constant if the current $_SERVER['SERVER_NAME'] is the staging server or the local machine. This overrides the domain located in the wp_options table of WordPress which should be the production server.
 
-I recommend versioning your theme only, since plugins and the WordPress Core could be updated by your client at any time.
+In a perfect world, WordPress would be a git submodule inside your versioned theme, but that's difficult to pull off and takes a lot of redirecting folders. I recommend versioning your theme only, since plugins and the WordPress Core could be updated by your client at any time.
 
 
 Database/domain independence

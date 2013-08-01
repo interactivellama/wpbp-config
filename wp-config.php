@@ -1,6 +1,6 @@
 <?php
 /**
- * The base configurations of the WordPress.
+ * The configurations of the WordPress.
  *
  * This file has the following configurations: MySQL settings, Table Prefix,
  * Secret Keys, WordPress Language, and ABSPATH. You can find more information
@@ -14,16 +14,27 @@
  * @package WordPress
  */
 
-/* SETTINGS: Could be used by root relative functions later on if you are on a staging or local server, replace the items in all caps. */
+/* SETTINGS: Could be used by root relative functions later on if you are on a staging or local server, replace the items in all caps. 
 
-// PRODUCTION SETTINGS
-$database = 'DATABASE';					/** MySQL database */
-$database_user =  'USERNAME';		/** MySQL database username */
-$database_password = 'PASSWORD';		/** MySQL database password */
-$domain = 'DOMAIN';									/* domain of website, without TLD (.com) */
+The default shema is domain.com, domain.staging.com, and domain.dev */
+
+/* - - - - - - - - - - - - -
+PRODUCTION SETTINGS
+- - - - - - - - - - - - - */
+/* MySQL database */
+$database = 'DATABASE';					
+/* MySQL database username */
+$database_user =  'USERNAME';		
+/** MySQL database password */
+$database_password = 'PASSWORD';		
+/* domain of site */
+$domain = 'DOMAIN';									
+/* domain of website, without TLD (.com) */
 $domain_tld = 'com';
 
-// STAGING AND LOCAL DATABASE SETTINGS
+/* - - - - - - - - - - - - -
+STAGING/LOCAL SETTINGS
+- - - - - - - - - - - - - */
 $staging_domain = 'STAGING.COM'; /* domain of staging server, with TLD (.com) */
 $staging_database = 'staging_' . 'USER';		/** Database name and username  */
 
