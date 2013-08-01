@@ -17,4 +17,4 @@ Leave find and replace back in the aughts! Databases should be domain agnostic f
 
 xip.io
 ------------
-Ever wanted to look at your site from a virtual machine (say for IE testing) or from a mobile device? Like every day, right? This free service allows this with zero configuration. xip.io is from the guys at 37signals and allows you to view any site from your local machine on any other device on your local network. I recommend a static IP address when hard wired and dynamic when on WiFi. Their dynamic nameservers detect your local machine's IP address and roundtrips it back to your network.
+Ever wanted to look at a site on your local machine from a virtual machine (say for IE testing) or from a mobile device? Like every day, right? This free service allows this with zero configuration. xip.io is from the guys at 37signals and allows you to view any site from your local machine on any other device on your local network. I recommend a static IP address when hard wired and dynamic when on WiFi. Their dynamic nameservers detect your local machine's IP address and roundtrips it back to your network.
