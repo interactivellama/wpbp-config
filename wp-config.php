@@ -48,7 +48,7 @@ $servers = array(
 
 	// EXAMPLE: domain.dev.10.0.10.91.xip.io
 	// Dyanmic DNS, great for tablet and phone testing the local machine
-	'xip.io' => $servers['local'] . '.' . $_SERVER['SERVER_ADDR'] . '.xip.io'
+	'xip.io' => $domain . '.dev' . '.' . $_SERVER['SERVER_ADDR'] . '.xip.io'
 );
 
 // test if it's one of the non-production servers, except the production server
